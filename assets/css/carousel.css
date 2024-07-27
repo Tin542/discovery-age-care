@@ -51,6 +51,29 @@
   object-fit: cover;
 }
 
+.dimon-hover {
+  position: relative;
+}
+
+.hover-container {
+  position: relative;
+}
+.diamond-hover {
+  position: absolute;
+}
+.fb1 {
+  background-image: url("../svg/diamond.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent !important;
+  top: 50px;
+  left: 50px;
+}
+.fb1 {
+  background-color: blue;
+  top: 50px;
+  left: 50px;
+}
 .social-icons {
   position: absolute;
   right: 5%;
@@ -72,10 +95,6 @@
   color: white;
   margin-left: 10px;
   width: 20px;
-}
-
-.social-icons .icon a:hover {
-  background-image: url("../svg/diamond.svg");
 }
 
 .social-icons .icon {
@@ -184,21 +203,20 @@
   border: 1px solid #419636;
 }
 
-.schedule-item:hover{
+.schedule-item:hover {
   background-color: #419636;
   color: #fff !important;
   border: none;
   cursor: pointer;
 }
 
-.schedule-item:hover p{
+.schedule-item:hover p {
   color: #fff !important;
 }
 
-.schedule-item:hover img{
+.schedule-item:hover img {
   filter: brightness(0) invert(1); /* Change to white color on hover */
 }
-
 
 .schedule-item.active {
   background-color: #419636;
