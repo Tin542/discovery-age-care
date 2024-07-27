@@ -140,6 +140,7 @@
 }
 
 .schedule-item {
+
     display: flex;
     width: 462px;
     height: 122px;
@@ -149,6 +150,7 @@
     border-radius: 15px;
     padding: 20px 30px;
     border: 1px solid #419636;
+
 }
 
 .schedule-item:hover {
