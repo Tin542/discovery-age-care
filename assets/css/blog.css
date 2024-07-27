@@ -95,6 +95,7 @@
   font-size: 12px;
   color: var(--sce-dac);
   margin: 20px 0;
+  text-align: left;
 }
 .blog .post .detail {
   text-decoration: none;
@@ -161,8 +162,12 @@
   display: none;
 }
 @media (max-width: 770px) {
+  .blog {
+  margin-top: 25px;
+
+  }
   .blog .cover {
-    padding: 25px;
+    padding: 50px;
   }
   .blog .screen-pc {
     display: none;

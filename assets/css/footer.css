@@ -7,15 +7,18 @@
   font-weight: bold;
 }
 .footer a {
-  color: #5cb85c;
+  color: var(--sce-dac);
   text-decoration: none;
+  transition: all .2s;
 }
 .footer a:hover {
-  text-decoration: underline;
+  color: var(--pri-dac);
+  transition: all .2s;
 }
 .footer .contact-info li {
   min-width: 100px;
   font-size: 14px;
+  margin-top: 20px;
 }
 .footer .logo {
   font-size: 1.2rem;
