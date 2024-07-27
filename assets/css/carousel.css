@@ -1,430 +1,369 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 /* Carousel */
 .carousel-caption {
-  font-family: "Be Vietnam Pro", sans-serif;
-  position: absolute;
-  top: 55% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%);
-  font-size: 55px;
-  font-weight: 900;
-  color: white;
-  text-align: center;
-  width: 100%;
-  font-family: "Be Vietnam Pro", sans-serif;
-  position: absolute;
-  top: 55% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%);
-  font-size: 55px;
-  font-weight: 900;
-  color: white;
-  text-align: center;
-  width: 100%;
-  animation: slideIn 2s forwards;
+    font-family: "Be Vietnam Pro", sans-serif;
+    position: absolute;
+    top: 55% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    width: 100%;
+    animation: slideIn 2s forwards;
 }
+
 @keyframes slideIn {
-  from {
-    transform: translateX(-50%) translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 1;
-  }
+    from {
+        transform: translateX(-50%) translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+    }
 }
 
 @keyframes icon-appears {
-  to {
-    bottom: 10px;
-  }
+    to {
+        bottom: 10px;
+    }
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
 }
 
 .social-icons {
-  position: absolute;
-  right: 5%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  bottom: 10px;
-  right: 5%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  animation: icon-appears 2s ease forwards;
-}
-.social-icons a img {
-  color: white;
-  margin-left: 10px;
-  width: 20px;
-  color: white;
-  margin-left: 10px;
-  width: 20px;
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 10px;
+    animation: icon-appears 2s ease forwards;
+    z-index: 100;
 }
 
-.social-icons .icon a:hover {
-  background-image: url("../svg/diamond.svg");
+.social-icons .icon a {
+    display: inline-block;
+    position: relative;
+    width: 40px; 
+    height: 40px; 
+    text-align: center; 
+}
+
+.social-icons .icon a img {
+    width: 20px; 
+    position: relative;
+    z-index: 1; 
+}
+
+.social-icons .icon a::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    height: 0;
+    background-image: url("../svg/diamond.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease; 
+    z-index: 0;
+}
+
+.social-icons .icon a:hover::before {
+    width: 40px;
+    height: 30px;
 }
 
 .social-icons .icon {
-  margin-left: -10px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  gap: 10px;
-  margin-left: -10px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
 }
 
 .vertical-line {
-  width: 1px;
-  height: 100px;
-  background-color: white;
-  margin-bottom: -10px;
-  width: 1px;
-  height: 100px;
-  background-color: white;
-  margin-bottom: -10px;
+    width: 1px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: -10px;
 }
 
 /* Schedule */
-/* .d-flex {
-  gap: 100px;
-} */
 .schedule-section {
-  padding: 50px 70px;
-  background-color: white;
-  padding: 50px 70px;
-  background-color: white;
+    padding: 50px 70px;
+    background-color: white;
 }
 
 .schedule-section p {
-  font-family: "Be Vietnam Pro", sans-serif;
-  text-align: center;
-  font-style: italic;
-  color: #534d44;
-  font-weight: 300;
-  font-size: 14px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  text-align: center;
-  font-style: italic;
-  color: #534d44;
-  font-weight: 300;
-  font-size: 14px;
-}
-.schedule-section .subtitle {
-  letter-spacing: 5px;
-  opacity: 0.5;
-  letter-spacing: 5px;
-  opacity: 0.5;
+    font-family: "Be Vietnam Pro", sans-serif;
+    text-align: center;
+    font-style: italic;
+    color: #534d44;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .schedule-section h2 {
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  font-size: 40px;
-  padding: 0 40px 0;
-  margin-bottom: 70px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  font-size: 40px;
-  padding: 0 40px 0;
-  margin-bottom: 70px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    padding: 0 40px 0;
+    margin-bottom: 70px;
 }
 
 .schedule-section .schedule-img {
-  width: 650px;
-  height: 480px;
-  border-radius: 20px;
-  object-fit: cover;
-  width: 650px;
-  height: 480px;
-  border-radius: 20px;
-  object-fit: cover;
+    width: 650px;
+    height: 480px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .schedule-section .schedule-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .schedule-section .schedule-row .col-right {
-  height: 480px;
-  overflow-y: scroll;
-  padding-right: 30px;
+    height: 480px;
+    overflow-y: scroll;
+    padding-right: 30px;
 }
 
 .schedule-item {
-  display: flex;
-  width: 462px;
-  height: 122px;
-  align-items: center;
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 20px 30px 20px 30px;
-  border: 1px solid #419636;
+    display: flex;
+    width: 462px;
+    height: 122px;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 30px;
+    border: 1px solid #419636;
 }
 
-.schedule-item:hover{
-  background-color: #419636;
-  color: #fff !important;
-  border: none;
-  cursor: pointer;
+.schedule-item:hover {
+    background-color: #419636;
+    color: #fff !important;
+    border: none;
+    cursor: pointer;
 }
 
-.schedule-item:hover p{
-  color: #fff !important;
+.schedule-item:hover p {
+    color: #fff !important;
 }
 
-.schedule-item:hover img{
-  filter: brightness(0) invert(1); /* Change to white color on hover */
+.schedule-item:hover img {
+    filter: brightness(0) invert(1); /* Change to white color on hover */
 }
-
 
 .schedule-item.active {
-  background-color: #419636;
-  color: #fff !important;
-  border: none;
+    background-color: #419636;
+    color: #fff !important;
+    border: none;
 }
 
 .schedule-item.active p {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 .schedule-item-icon {
-  font-size: 2rem;
-  color: var(--pri-dac);
-  margin-right: 15px;
+    font-size: 2rem;
+    color: var(--pri-dac);
+    margin-right: 15px;
 }
 
 .schedule-item-content {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .schedule-item-content h3 {
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 600;
-  margin: 0 0 5px;
-  font-size: 14px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 600;
-  margin: 0 0 5px;
-  font-size: 14px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    margin: 0 0 5px;
+    font-size: 14px;
 }
 
 .schedule-item-content p {
-  margin: 0;
-  text-align: left;
-  font-style: normal;
-  font-size: 14px;
-  color: var(--sce-dac);
-  font-weight: 300;
-  margin: 0;
-  text-align: left;
-  font-style: normal;
-  font-size: 14px;
-  color: var(--sce-dac);
-  font-weight: 300;
+    margin: 0;
+    text-align: left;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--sce-dac);
+    font-weight: 300;
 }
 
 .schedule-item-time {
-  font-weight: 600;
-  font-weight: 600;
+    font-weight: 600;
 }
 
 /* Card */
 .card-section {
-  padding: 25px;
-  background-color: white;
+    padding: 25px;
+    background-color: white;
 }
+
 .card-custom {
-  border: 1px solid #28a745 !important;
-  border-radius: 15px !important;
-  text-align: center !important;
-  height: 100% !important;
-  cursor: pointer !important;
+    border: 1px solid #28a745 !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+    height: 100% !important;
+    cursor: pointer !important;
 }
 
 .card-custom:hover {
-  background-color: #28a745 !important;
-  color: white !important;
+    background-color: #28a745 !important;
+    color: white !important;
 }
 
 .card-green {
-  background-color: #28a745 !important;
-  color: white !important;
+    background-color: #28a745 !important;
+    color: white !important;
 }
 
 .icon {
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
+
 .che-do-an-uong .cover {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 .che-do-an-uong .schedule-row .col-left {
-  margin-right: 35px;
+    margin-right: 35px;
 }
+
 .che-do-an-uong .schedule-row .col-right {
-  margin-left: 35px;
+    margin-left: 35px;
 }
+
 .che-do-an-uong .carousel-indicators {
-  position: absolute;
-  margin-top: 20px;
-  text-align: center;
-  bottom: -40px !important;
+    position: absolute;
+    margin-top: 20px;
+    text-align: center;
+    bottom: -40px !important;
 }
+
 .che-do-an-uong .carousel-indicators li {
-  background-image: url("../svg/diamond.svg");
-  background-size: cover;
-  background-position: center;
-  width: 12px !important;
-  height: 9px !important;
-  background-color: transparent !important;
-  opacity: 0.1 !important;
+    background-image: url("../svg/diamond.svg");
+    background-size: cover;
+    background-position: center;
+    width: 12px !important;
+    height: 9px !important;
+    background-color: transparent !important;
+    opacity: 0.1 !important;
 }
+
 .che-do-an-uong .carousel-indicators li.active {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 @media (max-width: 768px) {
-  .carousel-caption {
-    font-size: 32px;
-  }
-  .carousel-caption {
-    font-size: 32px;
-  }
+    .carousel-caption {
+        font-size: 32px;
+    }
 
-  .carousel-item img {
-    height: 400px;
-  }
-  .carousel-item img {
-    height: 400px;
-  }
+    .carousel-item img {
+        height: 400px;
+    }
 
-  .social-icons {
-    bottom: 5px;
-    right: 2%;
-  }
-  .social-icons {
-    bottom: 5px;
-    right: 2%;
-  }
+    .social-icons {
+        bottom: 5px;
+        right: 2%;
+    }
 
-  .vertical-line {
-    height: 50px;
-  }
+    .vertical-line {
+        height: 50px;
+    }
 
-  .schedule-section {
-    padding: 20px 0;
-    height: auto;
-  }
+    .schedule-section {
+        padding: 20px 0;
+        height: auto;
+    }
 
-  .schedule-section p {
-    margin-top: 30px;
-    font-size: 12px;
-  }
+    .schedule-section p {
+        margin-top: 30px;
+        font-size: 12px;
+    }
 
-  .schedule-section h2 {
-    font-size: 24px;
-  }
+    .schedule-section h2 {
+        font-size: 24px;
+    }
 
-  .schedule-section .schedule-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    object-fit: fill;
-  }
+    .schedule-section .schedule-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        object-fit: fill;
+    }
 
-  .schedule-section .schedule-row {
-    flex-direction: column;
-    align-items: center;
-  }
+    .schedule-section .schedule-row {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .schedule-section .schedule-row .col-right {
-    margin-left: 0;
-    width: 100%;
-    height: auto;
-    overflow-y: visible;
-  }
+    .schedule-section .schedule-row .col-right {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        overflow-y: visible;
+    }
 
-  .schedule-item {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .schedule-item {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .schedule-item-content h3,
-  .schedule-item-content p {
-    font-size: 12px;
-  }
+    .schedule-item-content h3,
+    .schedule-item-content p {
+        font-size: 12px;
+    }
 
-  .schedule-item-icon {
-    font-size: 1.5rem;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+    .schedule-item-icon {
+        font-size: 1.5rem;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-  .card-title {
-    font-weight: 600;
-  }
+    .card-title {
+        font-weight: 600;
+    }
 
-  .card-title,
-  .card-text {
-    font-size: 12px;
-    text-align: left;
-  }
+    .card-title,
+    .card-text {
+        font-size: 12px;
+        text-align: left;
+    }
 
-  .card-text {
-    font-weight: 300;
-  }
-  .icon {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .card-body {
-    padding: 30px 25px 30px 25px;
-  }
-  .control {
-    display: flex;
-    justify-content: center;
-  }
-  .card-text {
-    font-weight: 300;
-  }
-  .icon {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .card-body {
-    padding: 30px 25px 30px 25px;
-  }
-  .control {
-    display: flex;
-    justify-content: center;
-  }
+    .card-text {
+        font-weight: 300;
+    }
+
+    .icon {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .card-body {
+        padding: 30px 25px;
+    }
+
+    .control {
+        display: flex;
+        justify-content: center;
+    }
 }
