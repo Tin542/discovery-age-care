@@ -8,6 +8,7 @@
 .custom-navbar {
   background-color: white;
   width: 100%; /* Changed to 100% to be responsive */
+  max-width: 1440px;
   height: 103px;
   padding: 30px 0;
   position: relative; /* Initial position */

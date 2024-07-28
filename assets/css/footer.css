@@ -3,6 +3,9 @@
   padding: 40px 20px 40px 20px;
   display: flex;
 }
+.footer div {
+  max-width: 1440px;
+}
 .footer h5 {
   font-weight: bold;
 }
