@@ -58,13 +58,13 @@
 .about .accordion .accordion-icon img:first-child {
   position: absolute;
   top: 45%;
-  left: 20%;
+  left: 25%;
   display: none;
 }
 .about .accordion .accordion-icon img:nth-child(2) {
   position: absolute;
-  top: 26%;
-  left: 21%;
+  top: 23%;
+  left: 24%;
 }
 .about
   .accordion
