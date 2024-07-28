@@ -48,23 +48,11 @@
   max-width: 570px;
 }
 .about .accordion .accordion-icon {
-  border: 1px solid var(--pri-dac);
-  border-radius: 50%;
-  width: 20px;
-  min-width: 20px;
-  height: 20px;
   position: relative;
 }
 .about .accordion .accordion-icon img:first-child {
-  position: absolute;
-  top: 45%;
-  left: 25%;
+
   display: none;
-}
-.about .accordion .accordion-icon img:nth-child(2) {
-  position: absolute;
-  top: 23%;
-  left: 24%;
 }
 .about
   .accordion
