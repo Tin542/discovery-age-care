@@ -20,7 +20,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
-  color: var(  --sce-dac);
+  color: var(--sce-dac);
   margin-bottom: 20px; /* Added margin-bottom */
 }
 
@@ -58,9 +58,12 @@
 .swiper-slide:hover img {
   filter: brightness(0) invert(1); /* Change to white color on hover */
 }
+.swiper-slide:hover p {
+  color: var(--white-color) !important;
+}
 
 .icon-text-active {
-  background-color: var(--pri-dac); 
+  background-color: var(--pri-dac);
   color: var(--white-color);
 }
 
@@ -115,6 +118,5 @@
     flex: 1 1 45%; /* Adjust width for mobile */
     width: 100%; /* Ensure it doesn't exceed 100% width in mobile */
     flex-direction: column !important; /* Change to column direction */
-
   }
 }
