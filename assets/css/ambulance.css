@@ -80,7 +80,7 @@
   .ambulance .cover {
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 50px 24px;
+    padding: 50px 25px;
   }
   .ambulance .subtitle {
     font-size: 12px;

@@ -21,7 +21,7 @@
 .footer .contact-info li {
   min-width: 100px;
   font-size: 14px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .footer .logo {
   font-size: 1.2rem;
@@ -32,4 +32,38 @@
   height: 58px;
   gap: 0px;
   opacity: 0px;
+}
+@media (max-width: 770px) {
+  .footer .footer-contact .contact-info li {
+    font-size: 12px;
+  }
+  .footer .footer-contact  {
+    margin-top:15px;
+  }
+  .footer .footer-contact .footer-contact-title {
+    font-size: 16px !important;
+    line-height: 20.24px;
+    margin-bottom: 20px;
+  }
+  .footer .footer-about {
+    font-size: 16px !important;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 20.24px;
+  }
+  .footer .list-about li {
+    height: 15px;
+    margin-bottom: 15px;
+  }
+  .footer div {
+    color: var(  --sce-dac)
+  }
+  .footer .logo {
+    margin-bottom: 22px;
+  }
+  .footer .logo img {
+    width: 150px;
+    height: 40px;
+    object-fit: cover;
+  }
 }

@@ -269,7 +269,7 @@
     position: absolute;
     margin-top: 20px;
     text-align: center;
-    bottom: -40px !important;
+    bottom: -20px !important;
 }
 
 .che-do-an-uong .carousel-indicators li {
@@ -301,6 +301,27 @@
     }
 }
 @media (max-width: 768px) {
+    .che-do-an-uong .carousel {
+        padding-top: 0;
+    }
+    #banner .carousel-item img {
+        object-position: 75%;
+        transform: scale(1.20) translateY(-45px);
+    }
+    #banner .carousel-item {
+        position: relative;
+    }
+    #banner .carousel-item::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        transform: scale(1.20) translateY(-45px);
+        position: absolute;
+        background: white;
+        inset: 0;
+        z-index: 7;
+        opacity: .15;
+    }
     .che-do-an-uong .carousel-item .row .col-6 {
         margin: 15px 0;
     }
@@ -432,77 +453,3 @@
         margin-bottom: 20px;
     }
 }
-
-/* 
-<div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule5.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">11:00 - 12:00</h3>
-                    <p>Ăn trưa - Uống thuốc</p>
-                  </div>
-                </div>
-                <div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule6.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">12:00 - 14:00</h3>
-                    <p>Nghỉ trưa</p>
-                  </div>
-                </div>
-                <div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule7.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">14:00 - 15:00</h3>
-                    <p>Tắm - Ăn Bữa Phụ</p>
-                  </div>
-                </div>
-                <div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule8.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">15:00 - 16:45</h3>
-                    <p>Sinh hoạt tập thể - Tập vật lý trị liệu</p>
-                  </div>
-                </div>
-                <div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule9.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">16:45 - 18:00</h3>
-                    <p>Ăn tối - Uống thuốc - Thư giãn</p>
-                  </div>
-                </div>
-                <div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule10.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">18:00 - 20:30</h3>
-                    <p>Vệ sinh cá nhân - Xem thời sự - Trò chuyện</p>
-                  </div>
-                </div>
-                <div class="schedule-item">
-                  <div class="schedule-item-icon">
-                    <img src="./assets/svg/schedule/schedule11.svg" width="35" height="35" />
-
-                  </div>
-                  <div class="schedule-item-content">
-                    <h3 class="schedule-item-time">Sau 20:30</h3>
-                    <p>Nghỉ ngơi</p>
-                  </div>
-                </div>
-
-*/

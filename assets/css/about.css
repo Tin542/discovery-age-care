@@ -139,7 +139,7 @@
     line-height: 25.3px;
   }
   .about .container-cover {
-    padding: 25px;
+    padding: 0 25px 25px 25px;
   }
   .about .cover .content {
     flex-direction: column;
