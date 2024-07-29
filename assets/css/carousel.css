@@ -246,6 +246,13 @@
     margin-right: 35px;
 }
 
+.col-left .schedule-img {
+    width: 364px;
+    height: 230px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+}
+
 .che-do-an-uong .schedule-row .col-right {
     margin-left: 35px;
 }
