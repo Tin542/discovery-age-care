@@ -6,6 +6,12 @@
 .footer div {
   max-width: 1440px;
 }
+.footer .footer-about {
+  margin-bottom: 30px;
+}
+.footer .footer-contact-title {
+  margin-bottom: 30px;
+}
 .footer h5 {
   font-weight: bold;
 }
@@ -24,6 +30,7 @@
   margin-bottom: 20px;
 }
 .footer .logo {
+  margin-bottom: 30px;
   font-size: 1.2rem;
   font-weight: bold;
 }
