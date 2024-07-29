@@ -1,3 +1,6 @@
+#thien-duong-tron-kiep-nhan-sinh {
+  margin: 40px 0;
+}
 .header-text {
   padding-left: 70px;
   padding-top: 40px;
@@ -17,7 +20,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
-  color: #333333;
+  color: var(  --sce-dac);
   margin-bottom: 20px; /* Added margin-bottom */
 }
 
@@ -77,22 +80,41 @@
   .swiper-container {
     display: none !important;
   }
-
+  .header-text {
+    padding: 0 25px;
+    text-align: center;
+  }
+  .header-text h2 {
+    font-size: 18px;
+  }
+  .header-text h5 {
+    font-size: 15px;
+  }
   .swiper-container-mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns in mobile */
     place-items: center;
     gap: 10px; /* Adjust gap between items */
+    padding: 0 25px;
   }
 
   .swiper-wrapper {
     display: contents !important; /* Disable Swiper flex behavior */
+  }
+  #thien-duong-tron-kiep-nhan-sinh .swiper-slide img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  #thien-duong-tron-kiep-nhan-sinh .swiper-slide p {
+    font-size: 12px;
   }
 
   .swiper-slide {
     flex: 1 1 45%; /* Adjust width for mobile */
     width: 100%; /* Ensure it doesn't exceed 100% width in mobile */
     flex-direction: column !important; /* Change to column direction */
-    padding: auto;
+
   }
 }
