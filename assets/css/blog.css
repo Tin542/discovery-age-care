@@ -155,6 +155,7 @@
 .blog .post-image {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 .blog .post-image img {
   display: block;
@@ -163,6 +164,7 @@
 
 .blog .post-image:hover img {
   transform: scale(1.1);
+  border-radius: 15px;
 }
 
 .blog .post-image .overlay {
