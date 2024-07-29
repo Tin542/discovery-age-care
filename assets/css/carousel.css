@@ -157,6 +157,9 @@
     border: 1px solid #419636;
 
 }
+.che-do-an-uong .card:hover img{
+    filter: brightness(0) invert(1);
+}
 
 .schedule-item:hover {
     background-color: #419636;
@@ -298,6 +301,12 @@
     }
 }
 @media (max-width: 768px) {
+    .che-do-an-uong .carousel-item .row .col-6 {
+        margin: 15px 0;
+    }
+    .che-do-an-uong .card .card-body {
+        height: 190px;
+    }
     .carousel-caption {
         font-size: 32px;
     }

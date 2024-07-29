@@ -79,6 +79,9 @@
   font-weight: 600;
   background: #fff;
 }
+.copyright a {
+  color: #534D44 !important;
+}
 
 @media (max-width: 768px) {
   .copyright {
