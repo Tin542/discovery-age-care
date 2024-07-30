@@ -108,7 +108,7 @@
   background-color: white;
 }
 
-.schedule-section p {
+.schedule-section .subtitle {
   text-align: center;
   font-size: 14px;
   font-style: italic;
@@ -117,6 +117,16 @@
   opacity: 0.5;
   color: var(--sce-dac);
   margin-bottom: 10px;
+}
+
+.schedule-section p {
+styleName: 14/Light;
+font-family: Be Vietnam Pro;
+font-size: 14px;
+font-weight: 300;
+line-height: 17.71px;
+text-align: left;
+
 }
 
 .schedule-section h2 {
