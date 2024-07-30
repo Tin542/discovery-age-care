@@ -16,6 +16,13 @@ function checkScrollPosition() {
   }
 }
 
+document.getElementById('scroll-top-button').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 // Check scroll position on page load
 window.onload = checkScrollPosition;
 

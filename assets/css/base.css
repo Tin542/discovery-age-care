@@ -37,12 +37,14 @@
   font-weight: 100;
   font-style: normal;
   font-size: 14px;
+  color: var(--sce-dac);
 }
 .be-vietnam-pro-bold {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
+  color: var(--sce-dac);
 }
 .be-vietnam-pro-thin {
   font-family: "Be Vietnam Pro", sans-serif;
@@ -56,6 +58,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
+  color: var(--sce-dac);
 }
 html {
   font-size: 62.5%;

@@ -150,12 +150,15 @@
     width: 462px;
     height: 122px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background-color: #ffffff;
     border-radius: 15px;
     padding: 20px 30px;
     border: 1px solid #419636;
 
+}
+.che-do-an-uong .card:hover img{
+    filter: brightness(0) invert(1);
 }
 
 .schedule-item:hover {
@@ -266,7 +269,7 @@
     position: absolute;
     margin-top: 20px;
     text-align: center;
-    bottom: -40px !important;
+    bottom: -20px !important;
 }
 
 .che-do-an-uong .carousel-indicators li {
@@ -298,6 +301,33 @@
     }
 }
 @media (max-width: 768px) {
+    .che-do-an-uong .carousel {
+        padding-top: 0;
+    }
+    #banner .carousel-item img {
+        object-position: 75%;
+        transform: scale(1.20) translateY(-45px);
+    }
+    #banner .carousel-item {
+        position: relative;
+    }
+    #banner .carousel-item::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        transform: scale(1.20) translateY(-45px);
+        position: absolute;
+        background: white;
+        inset: 0;
+        z-index: 7;
+        opacity: .15;
+    }
+    .che-do-an-uong .carousel-item .row .col-6 {
+        margin: 15px 0;
+    }
+    .che-do-an-uong .card .card-body {
+        height: 190px;
+    }
     .carousel-caption {
         font-size: 32px;
     }
