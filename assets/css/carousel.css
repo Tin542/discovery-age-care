@@ -32,8 +32,18 @@
 }
 
 @keyframes icon-appears {
-  to {
-    bottom: 10px;
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  99% {
+    background: var(--pri-dac);
+    transform: scale(1.2);
+  }
+  100% {
+    top: 65%;
+    right: 6%;
+    opacity: 1;
   }
 }
 
@@ -51,9 +61,13 @@
   align-items: center;
   flex-direction: column;
   bottom: 10px;
-  animation: icon-appears 2s ease forwards;
   z-index: 100;
 }
+
+.social-icons .icon {
+  animation: icon-appears 0.1s ease forwards;
+}
+
 
 .social-icons .icon a {
   display: inline-block;
